@@ -1,14 +1,24 @@
 '''
-Buatlah sebuah fungsi yang bila dipanggil akan mencetak kalimat-kalimat berikut:
+Buatlah sebuah fungsi yang menerima input parameter sebuah bilangan bulat dari 1 s.d 10 kemudian mencetak istilah yunani untuk bilangan tersebut yakni:
 
-Bersabarlah dan kamu akan mendapatkan apa yang kamu inginkan.
-Ketaktahuan adalah hal yang paling mengerikan.
-Kurangnya kecerdasan adalah kemiskinan terbesar.
+mono
+di
+tri
+tetra
+penta
+hexa
+hepta
+octa
+nona
+deca
 '''
 
-def kalimat():
-    print("Bersabarlah dan kamu akan mendapatkan apa yang kamu inginkan.")
-    print("Ketaktahuan adalah hal yang paling mengerikan.")
-    print("Kurangnya kecerdasan adalah kemiskinan terbesar.")
-    
-kalimat()
+def yunani(bilangan):
+  if 1 <= bilangan <= 10:
+    nama = ['mono', 'di', 'tri', 'tetra', 'penta', 'hexa', 'hepta', 'octa', 'nona', 'deca']
+    print(nama[bilangan-1])
+  else:
+    print("Masukan bilangan antara 1 sampai 10: ")
+
+angka = int(input("Masukan bilangan: "))
+yunani(angka)
